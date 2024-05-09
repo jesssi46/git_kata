@@ -1,8 +1,8 @@
 import pandas as pd
 
-def load_titanic_female():
+def load_titanic_female(filepath):
     # Pfade und Dateinamen entsprechend anpassen
-    titanic_data = pd.read_csv('C:/Users/jessi/Documents/UNI/Master/2. Semester/Enterprise Architectures for Big Data/git_kata/data/titanic.csv')
-    female_passengers = titanic_data[titanic_data['Sex'] == 'female']
+    titanic_data = pd.read_csv(filepath)
+    female_passengers = titanic_data[titanic_data['sex'] == 'female']
     return female_passengers
 
